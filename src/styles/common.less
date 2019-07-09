@@ -1,0 +1,218 @@
+/**订单详情店铺信息**/
+
+.firm-name-box{
+  padding-left: 80px;
+  height:100px;
+  line-height:100px;
+  font-size: 1.4rem;
+  color: @c-121212;
+  background:url("../assets/icon-shop.png") no-repeat 20px center @c-fff;
+  background-size:41px 38px;
+  .icon-v{
+    display:inline-block;
+    width:30px;
+    height:100%;
+    margin-left:5px;
+    background:url("../assets/icon-vip.png") no-repeat 0 center;
+    background-size:21px 20px;
+    vertical-align: middle;
+  }
+}
+
+/**********租车切换switch*************/
+.rent-switch {
+  position: relative;
+
+  width: 110px;
+  height: 32px;
+  border: 1PX solid @bc-e5e5e5;
+  border-radius: 8px;
+}
+.rent-switch:before, .rent-switch:after {
+  box-sizing: border-box;
+  width: 54px;
+  height: 32px;
+  line-height: 32px;
+
+  color: #888;
+  text-align: center;
+}
+.rent-switch-right:after {
+  border: 1PX solid #ff6600;
+  border-radius: 8px;
+  color: #ff6600;
+  top: -1PX;
+}
+.rent-switch-left:before {
+  border: 1PX solid #ff6600;
+  border-radius: 8px;
+  color: #ff6600;
+  top: -1PX;
+}
+.rent-switch:before {
+  position: absolute;
+  left: -1PX;
+
+  content: '到店';
+}
+.rent-switch:after {
+  position: absolute;
+  right: -1PX;
+  content: '上门';
+}
+
+
+.overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.brear-word {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.form-field {
+  width: 100%;
+  height: auto;
+}
+.form-field__title {
+  width: 100%;
+  padding: 0 20px;
+}
+.form-field__title-text {
+  position: relative;
+
+  width: 100%;
+  padding: 30px 0 20px 24px;
+
+  font-size: 28px;
+  color: #4c4c4c;
+}
+.form-field__line {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  display: inline-block;
+
+  width: 4px;
+  height: 24px;
+
+  background: #f60;
+}
+.form-field__item {
+  display: flex;
+
+  width: 100%;
+  height: 100px;
+  border-bottom: 1PX solid #e5e5e5;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+.form-field__item-l {
+  display: inline-block;
+
+  height: 100px;
+  line-height: 100px;
+  padding: 0 20px;
+
+  font-size: 28px;
+  color: #4c4c4c;
+}
+.form-field__item-r {
+  flex: 1;
+  height: 100%;
+
+  padding-right: 20px;
+}
+.form-field__input {
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+
+  font-size: 28px;
+  color: #121212;
+}
+.form-field__tip {
+  padding: 20px;
+
+  font-size: 24px;
+  color: #888;
+}
+.form-field__warning {
+  position: absolute;
+  left: -30px;
+  top: -5px;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+
+  background: url("../assets/my/warning.png") no-repeat center center;
+  background-size: 26px 26px;
+}
+
+.top-extend {
+  position: relative;
+
+  width: 100%;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+
+  font-size: 28px;
+  color: #121212;
+  background: #fff;
+}
+.top-extend__icon {
+  display: inline-block;
+  width: 18px;
+  height: 100%;
+  vertical-align: top;
+
+  background: url("../assets/extend.png") no-repeat center center;
+  background-size: 18px 9px;
+}
+.top-extend__box {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 1000;
+  max-height: 320px;
+  overflow-y: auto;
+
+  width: 100%;
+  background: #fff;
+}
+.top-extend__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+
+  font-size: 28px;
+  color: #4c4c4c;
+  background: #fff;
+}
+
+.recruit-plan {
+  min-height: 100%;
+  line-height: 1.8;
+  padding: 20px 20px 120px 20px;
+
+  background: #fff;
+  table {
+    border-collapse: collapse;
+  }
+  td {
+    width: 160px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+  }
+  p {
+    margin: 10px 0;
+  }
+}

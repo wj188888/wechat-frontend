@@ -1,0 +1,278 @@
+@import "./theme";
+
+.tit-shu {
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  color: #929292;
+  .icon-shu {
+    display: inline-block;
+    width: 4px;
+    height: 24px;
+    margin-left: 20px;
+    margin-right: 18px;
+    border-radius: 2px;
+    background-color: #929292;
+    vertical-align: text-top;
+  }
+}
+
+.normal-box {
+  margin-top: 30px;
+  background-color: @c-fff;
+  .my-ticket {
+    overflow: hidden;
+    li {
+      float: left;
+      width: 33.3333%;
+      height: 125px;
+      line-height: 125px;
+      text-align: center;
+      font-size: 24px;
+      color: #56565e;
+      .icon-tt {
+        display: inline-block;
+        width: 60px;
+        height: 125px;
+        margin-right: 20px;
+        background: no-repeat center center;
+        background-size: 58px 60px;
+        vertical-align: middle;
+        &.icon-tt-cj {
+          background-image: url("../assets/ticket/icon_city.png");
+        }
+        &.icon-tt-jc {
+          background-image: url("../assets/ticket/icon_airplan.png");
+        }
+        &.icon-tt-jz {
+          background-image: url("../assets/ticket/icon_train.png");
+        }
+        &.icon-tt-jd {
+          background-image: url("../assets/ticket/icon_jingdian.png");
+        }
+        &.icon-tt-gz {
+          background-image: url("../assets/ticket/icon_work.png");
+        }
+        &.icon-tt-xx {
+          background-image: url("../assets/ticket/icon_school.png");
+        }
+        &.icon-tt-bc {
+          background-image: url("../assets/ticket/icon_baoche.png");
+        }
+      }
+    }
+  }
+}
+
+.padding-box {
+  position: absolute;
+  top: 495px;
+  bottom: 30px;
+  width: 100%;
+  background-color: @c-fff;
+  p {
+    font-size: 28px;
+    padding: 20px;
+    color: #929292;
+  }
+  .warning-list {
+    li {
+      position: relative;
+      line-height: 35px;
+      font-size: 28px;
+      color: #393a3e;
+      padding: 0 20px;
+      margin-bottom: 30px;
+      .icon-warning {
+        font-size: 36px;
+        font-weight: bold;
+        color: @c-ff6600;
+      }
+      .icon-r-jt:after {
+        right: 20px;
+      }
+    }
+  }
+}
+
+.gen-ticket-box {
+  height: 160px;
+  .order-box {
+    padding-top: 25px;
+    .circle {
+      left: 35px;
+      top: 9px;
+    }
+    .place {
+      width: 340px;
+      margin-left: 75px;
+    }
+  }
+  .price {
+    right: 30px;
+    top: 6px;
+    .number{
+      color: @c-ff6600;
+      font-size: 28px;
+      em {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.gen-ticket-info {
+  height: 100px;
+  position: relative;
+  border-top: 4px dotted #EAEAEA;
+  margin: 0 40px;
+  p {
+    height: 40px;
+    line-height: 40px;
+  }
+  .person {
+    font-size: 26px;
+    color: @c-ff6600;
+    margin-top: 5px;
+  }
+  .time {
+    font-size: 26px;
+    color: #0f0f0f;
+  }
+  .eval-state {
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    right: -10px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: @c-fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 28px;
+
+  }
+}
+
+.orange-back {
+  background-color: @c-ff6600;
+}
+
+.green-back {
+  background-color: #4DC271;
+}
+
+.gray-back {
+  background-color: #BDBDBD;
+}
+
+.red-back {
+  background-color: #f91616;
+}
+
+//车票-验票-无车票
+.tic-box {
+  display: flex;
+  flex-direction: column;
+  .no-container {
+    flex: 4;
+    padding-top: 300px;
+    p {
+      width: 100%;
+      text-align: center;
+      font-size: 36px;
+      line-height:1.2;
+      color: #616161;
+      img {
+        display: block;
+        width: 424px;
+        height: 190px;
+        margin: 0 auto 44px;
+      }
+    }
+
+  }
+  .no-but {
+    flex: 1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0 20px 20px;
+  }
+}
+
+//退票dialog
+.return-title {
+  height: 110px;
+  background-color: #e6e6e6;
+  font-size: 36px;
+  color: #000;
+  text-align: center;
+  line-height: 110px;
+  margin-bottom: 25px;
+  position: relative;
+  span {
+    display: block;
+    height: 110px;
+    line-height: 100px;
+  }
+  .close {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: url("../assets/ticket/close.png") no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.return-mg {
+  margin-top: 95px;
+  margin-bottom: 45px;
+}
+
+.tc-dialog {
+  .check-item {
+    margin-bottom: 20px;
+    .check-box {
+      padding-left: 20px;
+      font-size: 30px;
+      color: #000;
+      text-align: left;
+    }
+  }
+}
+
+.ticket-suc-fal {
+  width: 254px;
+  height: 254px;
+}
+
+.clear-white-back {
+  .weui-dialog {
+    background-color: transparent;
+  }
+}
+
+#tui-clear-over {
+  .weui_dialog {
+    overflow: visible;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

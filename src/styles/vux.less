@@ -1,0 +1,609 @@
+@import "./theme";
+
+.vux-1px-t {
+  border-top: 1PX solid @bc-e5e5e5
+}
+
+.vux-1px-b, .vux-1px-tb {
+  border-bottom: 1PX solid @bc-e5e5e5
+}
+
+.vux-1px-tb {
+  border-top: 1PX solid @bc-e5e5e5;
+  background-image: none
+}
+
+.vux-1px-l {
+  border-left: 1PX solid @bc-e5e5e5;
+}
+
+.vux-1px-r {
+  border-right: 1PX solid @bc-e5e5e5;
+}
+
+.vux-1px, .vux-1px-radius {
+  border: 1PX solid @bc-e5e5e5;
+}
+
+.vux-1px-radius {
+  border-radius: 4PX
+}
+
+@media screen and (min-device-pixel-ratio: 2) {
+  .vux-1px-radius {
+    position: relative;
+    border: 0
+  }
+
+  .vux-1px-radius:before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1PX solid @bc-e5e5e5;
+    transform: scale(.5);
+    transform-origin: 0 0;
+    padding: 1PX;
+    box-sizing: border-box;
+    border-radius: 8PX;
+    pointer-events: none
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .vux-1px {
+    position: relative;
+    border: 0
+  }
+
+  .vux-1px-b, .vux-1px-l, .vux-1px-r, .vux-1px-t, .vux-1px-tb {
+    border: 0
+  }
+
+  .vux-1px-t {
+    background-position: 0 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5))
+  }
+
+  .vux-1px-b {
+    background-position: 0 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5))
+  }
+
+  .vux-1px-b, .vux-1px-t, .vux-1px-tb {
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% 1PX
+  }
+
+  .vux-1px-tb {
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5)), -webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, @c-e0e0e0));
+    background-position: top, bottom
+  }
+
+  .vux-1px-l {
+    background-position: 0 0;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5))
+  }
+
+  .vux-1px-r {
+    background-position: 100% 0;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5))
+  }
+
+  .vux-1px-l, .vux-1px-r {
+    background-repeat: repeat-y;
+    background-size: 1PX 100%
+  }
+
+  .vux-1px:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, transparent), color-stop(.5, @bc-e5e5e5)), -webkit-gradient(linear, left top, right top, color-stop(.5, transparent), color-stop(.5, @c-e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(.5, transparent), color-stop(.5, @c-e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(.5, transparent), color-stop(.5, @c-e0e0e0));
+    background-size: 100% 1PX, 1PX 100%, 100% 1PX, 1PX 100%;
+    background-repeat: no-repeat;
+    background-position: top, 100%, bottom, 0;
+    padding: 1PX;
+    box-sizing: border-box;
+    z-index: 10;
+    pointer-events: none
+  }
+}
+
+.vux-center, .vux-center-h, .vux-center-v {
+  display: box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.vux-center, .vux-center-v {
+  -webkit-box-align: center;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vux-center, .vux-center-h {
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+
+/**swiper**/
+.swiper-box,
+.slide-ul{
+  .vux-slider > .vux-indicator {
+    bottom: 10px;
+    > a {
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      > .vux-icon-dot {
+        width: 26px;
+        height: 4PX;
+        border-radius: 2PX;
+        background-color: #ff6600;
+        opacity: 0.7;
+        border:1PX solid #ff6600;
+        &.active {
+          background-color: #fff;
+          border:1PX solid #ccc;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+//订单车票轮播图样式
+.ewm-pic-box{
+  .vux-slider > .vux-indicator{
+    height:32px;
+    top:42px;
+    bottom:auto;
+    > a{
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      > .vux-icon-dot{
+        width:32px;
+        height:32px;
+        -webkit-border-radius: 0;
+        -moz-border-radius:  0;
+        border-radius:  0;
+        border:1PX solid transparent;
+        background:url('../assets/ewm.png') no-repeat center center;
+        background-size:21px 21px;
+        &.active {
+          background:url('../assets/ewm-active.png') no-repeat center center;
+          background-size:21px 21px;
+          border-color:#DFDFDF;
+        }
+      }
+    }
+  }
+}
+
+//订单车辆调度轮播图样式
+.dispatch-vehicles {
+  .vux-slider > .vux-indicator{
+    height:16px;
+    top:30px;
+    bottom:auto;
+    > a{
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 0;
+      }
+      > .vux-icon-dot{
+        width:30px;
+        height:16px;
+        -webkit-border-radius: 0;
+        -moz-border-radius:  0;
+        border-radius:  0;
+        //border:1PX solid transparent;
+        background:url('../assets/charter/serviceCar2.png') no-repeat center center;
+        background-size:30px 16px;
+        &.active {
+          background:url('../assets/charter/serviceCar1.png') no-repeat center center;
+          background-size:30px 16px;
+          border-color:#DFDFDF;
+        }
+      }
+    }
+  }
+}
+
+/***其他vux控件覆盖***/
+
+.datetime-x{
+  .weui-cells{
+    margin-top:0;
+    &:before,
+    &:after{
+      display:none;
+    }
+    .weui-cell{
+      display:block;
+      padding:0;
+    }
+    .vux-cell-bd{
+      width:100%;
+      padding:28px 0 8px;
+      font-size:24px;
+      p{
+        color: @c-999;
+      }
+    }
+    .weui-cell__ft{
+      width:100%;
+      padding:10px 0;
+      font-size:32px;
+      color: @c-121212;
+      text-align:left;
+      &:after{
+        display:none;
+      }
+      .vux-cell-value{
+        color: @c-121212;
+      }
+    }
+  }
+}
+
+.date-time{
+  position:relative;
+  &.pad-l-50 .weui-cell_access p{
+    padding-left:50px;
+    width:250px;
+  }
+  .vux-no-group-title{
+    margin-top:0;
+    &:after{
+      display:none;
+    }
+  }
+  .weui-cell{
+    padding:0;
+  }
+  .weui-cell_access{
+    p{
+      display:block;
+      flex:0 1 auto;
+      width: 180px;
+      height: 100px;
+      line-height: 100px;
+      padding:0;
+      font-size: 28px;
+      color: #393a3e;
+    }
+    .weui-cell__ft{
+      flex:1;
+      height: 100px;
+      line-height: 100px;
+      text-align:left;
+      color: @c-121212;
+      font-size: 28px;
+      &:after{
+        display:none;
+      }
+    }
+  }
+}
+
+.weui-loading_toast,
+.vux-toast,
+.vux-alert{
+  font-size:16PX;
+}
+
+.weui_toast_text{
+  max-width:80%;
+  padding: 0 15px;
+  line-height:1.42857;
+}
+
+.weui_dialog_confirm .weui_dialog .weui_dialog_bd {
+  text-align:center;
+  line-height:1.42857;
+}
+
+.weui_tabbar:before{
+  border-top: 1PX solid @bc-e5e5e5;
+}
+
+.xs-plugin-pullup-container{
+  color:#929292;
+  line-height:60px;
+}
+
+.weui-loading_toast{
+  .weui-mask_transparent{
+    z-index:5001;
+  }
+  .weui-toast{
+    z-index:5002;
+  }
+  .weui-toast__content{
+    font-size: 14PX;
+    margin: 7PX 0 15PX!important;
+  }
+}
+
+.vux-x-dialog{
+  .weui-dialog{
+    width:85%;
+    max-width:none;
+    border-radius:6PX;
+  }
+  .weui-dialog__hd{
+    display:none;
+  }
+  .weui-dialog__bd{
+    min-height:0;
+    margin-top:2em;
+    padding-bottom:0;
+    line-height:1.4;
+    color: @c-4c4c4c;
+    font-size:32px;
+  }
+  .weui-dialog__ft{
+    margin-top:26PX;
+  }
+  .weui-dialog__btn_primary{
+    color: @c-ff6600;
+  }
+}
+
+.dialog-410{
+  .weui-dialog{
+    width:410px;
+    max-width:none;
+    border-radius:6PX;
+  }
+}
+
+.dialog-520{
+  .weui-dialog{
+    width:520px;
+    max-width:none;
+    border-radius:6PX;
+    padding:30px 20px;
+  }
+}
+
+.discount-dialog{
+  .weui-dialog{
+    border-radius:6PX;
+    padding:30px;
+    font-size:28px;
+    text-align:left;
+    color:#4c4c4c;
+  }
+  .station-sale,
+  .activity,
+  .coupon{
+    margin-bottom:20px;
+  }
+  .tag{
+    display: inline-block;
+    width:26px;
+    height:26px;
+    line-height:26px;
+    margin-right:15px;
+    text-align:center;
+    color:#fff;
+    font-size:20px;
+    border-radius:4px;
+    vertical-align: bottom;
+  }
+  .station-sale .tag{
+    background-color: #2290f9;
+  }
+  .activity .tag{
+    background-color: @bg-56ab71;
+  }
+  .coupon .tag{
+    background-color: @bg-ff9900;
+  }
+}
+
+.new-user-coupon-dialog{
+  .weui-dialog{
+    width:100%;
+    max-width:none;
+    padding:0 20px;
+    background-color:transparent;
+  }
+  .new-user-coupon{
+    position: relative;
+    border-radius:6PX;
+    background-image:linear-gradient(45deg, #e4454a, #f6674c);
+    padding:30px;
+  }
+  .bg-1{
+    position: absolute;
+    top:96px;
+    left:60px;
+    width:57px;
+    height:70px;
+    background:url("../assets/my/caidai1.png") no-repeat center center;
+    background-size:57px 70px;
+  }
+  .bg-2{
+    position: absolute;
+    top:40px;
+    right:50px;
+    width:45px;
+    height:77px;
+    background:url("../assets/my/caidai2.png") no-repeat center center;
+    background-size:45px 77px;
+  }
+  .new-title{
+    padding-top:50px;
+    width:100%;
+    height:44px;
+    background:url("../assets/my/title.png") no-repeat center center;
+    background-size:218px 44px;
+  }
+  .new-tips{
+    margin:20px 0 40px;
+    font-size:24px;
+    color:#fff;
+  }
+  .coupon-list{
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .coupon-item{
+    position: relative;
+    margin-bottom: 30px;
+    background: url("../assets/my/discount_2.png") repeat-y right top @bg-fff;
+    background-size:16px 10px;
+    font-size:24px;
+    color:#888;
+    .coupon-info{
+      position: relative;
+      display: flex;
+      height:175px;
+      padding:30px 160px 20px 0;
+    }
+    .coupon-price-box{
+      white-space: nowrap;
+      padding:0 20px 24px;
+      text-align: center;
+      border-right:1px dashed @bc-e5e5e5;
+    }
+    .coupon-price{
+      margin-bottom:30px;
+      font-size:28px;
+      color: @fc-ff6600;
+      em{
+        font-size:40px;
+      }
+    }
+    &.no-use{
+      .coupon-price,
+      .coupon-name{
+        color: @fc-888;
+      }
+    }
+    .coupon-detail{
+      position: relative;
+      flex:1;
+      padding:0 20px 0 30px;
+      font-size:20px;
+    }
+    .coupon-name{
+      width: 300px;
+      margin-bottom:40px;
+      line-height:1.4;
+      font-size:32px;
+      color:#121212;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .coupon-time{
+      position: absolute;
+      bottom: 0;
+      left:30px;
+      line-height: 1.6;
+      p{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 300px;
+      }
+    }
+    .coupon-use{
+      line-height:60px;
+      text-align:center;
+    }
+    .coupon-status{
+      position: absolute;
+      right:20px;
+      bottom:24px;
+      .button-size{
+        width:120px;
+        height:50px;
+        line-height:50px;
+        font-size:24px;
+      }
+      &.coupon-used{
+        top:0;
+        bottom:0;
+        width:120px;
+        background:url("../assets/my/used.png") no-repeat right center;
+        background-size:100px 100px;
+      }
+      .coupon-percent{
+        position: relative;
+        width:120px;
+        height:20px;
+        margin-bottom:15px;
+        border-radius:10px;
+        background-color: @bg-ffe1cd;
+        overflow:hidden;
+        .percent{
+          position: absolute;
+          left:0;
+          height:20px;
+          border-radius:10px;
+          transition: width 1s;
+          background-color: @bg-ff6600;
+        }
+      }
+      .coupon-percent-txt{
+        text-align: center;
+        margin-bottom:15px;
+        color: @fc-ff6600;
+      }
+    }
+  }
+  .new-user-integral{
+    width:170px;
+    height:170px;
+    margin:40px auto 90px;
+    text-align:center;
+    color:#ff6600;
+    background: url("../assets/my/discount_3.png") repeat-x 0 bottom #fff;
+    background-size:10px 16px;
+    border-radius:8px;
+    overflow:hidden;
+    .txt{
+      font-size:28px;
+      padding:26px 0 30px;
+    }
+    .integral{
+      font-size:50px;
+    }
+  }
+}
+
+.weui_btn {
+  line-height: 90px;
+  background-color: #fd5e1e;
+  color: @c-fff;
+  font-size: 36px;
+}
+.weui_btn_primary:not(.weui_btn_disabled):active {
+  background-color: #fd5223;
+  color: @c-fff;
+}
+
+.picker{
+  z-index:1000!important;
+}

@@ -1,0 +1,462 @@
+@import "./theme";
+
+.app-main {
+  .collect-box{
+    width:100%;
+    overflow: hidden;
+  }
+  //企业班车申请
+  .agree {
+    position: relative;
+    display:block;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 60px;
+    font-size: 28px;
+    text-align: center;
+    a {
+      color: #0077dd;
+    }
+  }
+  //用户提醒问题样式
+  .user-tip {
+    height: 148px;
+    background-color: #FEF3DD;
+    padding: 27px 21px;
+    color: @c-ff6600;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .apply-footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    height:90px;
+    .button{
+      -webkit-border-radius:0;
+      -moz-border-radius:0;
+      border-radius:0;
+    }
+  }
+  .apply-left {
+    -moz-box-flex: 1;
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: @c-fff;
+    label {
+      display: block;
+      float:left;
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      margin-left: 22px;
+      margin-top:25px;
+    }
+    span {
+      display: block;
+      float:left;
+      height: 90px;
+      line-height: 90px;
+      font-size: 30px;
+      color: @c-ff6600;
+      margin-left: 14px;
+    }
+    .detail {
+      float:right;
+      padding-right:45px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 28px;
+      margin-top:25px;
+    }
+    .yellow-jt-up{
+      display: block;
+      position: absolute;
+      top:40px;
+      right:20px;
+      width:16px;
+      height:10px;
+      background: url("../assets/jt_yellow_up.png") no-repeat 0 0;
+      -webkit-background-size:100%;
+      background-size:100%;
+    }
+  }
+  .apply-right {
+    width: 100%;
+    -moz-box-flex: 1;
+    flex: 1;
+  }
+  //中间部分
+  .order-box {
+    position: relative;
+    span {
+      display: inline-block;
+    }
+    .circle {
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      font-size: 16px;
+      line-height: 26px;
+      top: 9px;
+      left: 170px;
+      text-align: center;
+      color: @c-fff;
+      -webkit-border-radius: 13px;
+      -moz-border-radius: 13px;
+      border-radius: 13px;
+    }
+    .place {
+      float: left;
+      width:340px;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+      overflow:hidden;
+      font-size: 28px;
+      color: @c-121212;
+      margin-left: 60px;
+      height: 45px;
+      line-height: 45px;
+    }
+    .start {
+      height: 45px;
+      position: relative;
+      .time {
+        float: left;
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 40px;
+        color: #212325;
+        margin-left: 20px;
+      }
+      &.active .icon-c{
+        background-image:url("../assets/star_orange.png");
+      }
+      &.active .collect-icon{
+        border:1PX solid @c-ff6600;
+        color: @c-ff6600;
+      }
+      .date-box{
+        float: left;
+        width: 140px;
+        margin-left: 21px;
+        p{
+          font-size:20px;
+          text-align: left;
+          margin-top:2px;
+          color: @c-121212;
+        }
+      }
+    }
+    .end {
+      height: 45px;
+      margin-top: 38px;
+      position: relative;
+      .company {
+        float: left;
+        width: 120px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 24px;
+        color: #929292;
+        margin-left: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+  .price {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    .number {
+      font-size: 40px;
+      color: @c-ff6600;
+      text-align: right;
+    }
+    .qi{
+      font-size:24px;
+      color:#888;
+      margin-left:6px;
+    }
+    .remain {
+      font-size: 32px;
+      color: #929292;
+      text-align: right;
+      margin-top: 15px;
+    }
+  }
+  //收藏报价
+  .container-box {
+    width:100%;
+    height: 245px;
+    padding-top: 40px;
+    position: relative;
+    background-color: @c-fff;
+    margin-bottom: 20px;
+    &:active{
+      -moz-opacity:0.8;
+      opacity:0.8;
+    }
+    a {
+      display: block;
+    }
+    span {
+      display: inline-block;
+    }
+    .desc {
+      height: 60px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      background-color: @c-fff;
+      .detail {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 21px;
+        font-size: 24px;
+        color: #929292;
+        flex: 1;
+      }
+      .frequency {
+        flex: 1;
+        height: 60px;
+        line-height: 60px;
+        font-size: 24px;
+        color: #43BDFE;
+        text-align: right;
+        padding-right: 15px;
+      }
+    }
+  }
+  //散客购票
+  .top-tip {
+    p {
+      height: 81px;
+      line-height: 81px;
+      font-size: 26px;
+      text-align: center;
+      color: #929292;
+      span {
+        color: @c-ff6600;
+      }
+    }
+  }
+  .detail-box {
+    background-color: @c-fff;
+    margin-bottom: 24px;
+    .select-price{
+      position:relative;
+      height:70px;
+      line-height:70px;
+      margin-right:1rem;
+      padding-left:20px;
+      padding-right:40px;
+      font-size:24px;
+      color:#929292;
+      .icon-r-jt:after{
+        right:0;
+      }
+    }
+    .order-box {
+      padding: 20px 20px;
+    }
+  }
+
+  //企业班车申请成功
+  .success-nav {
+    width: 100%;
+    height: 120px;
+    background-color: #8BC8F7;
+    display: flex;
+    position: relative;
+    .a-address,
+    .b-address{
+      display: flex;
+      align-items:center;
+      flex: 1;
+      margin:10px 0 10px 10px;
+      line-height:1.414;
+      text-align: right;
+      color: #f7f7f7;
+      font-size: 24px;
+      overflow:hidden;
+      p{
+        width: 100%;
+      }
+    }
+    .b-address {
+      margin:10px 10px 10px 0;
+      text-align: left;
+    }
+    .sus-line {
+      width: 195px;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      text-align: center;
+      span{
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 120px;
+        font-size: 24px;
+        color: #f7f7f7;
+      }
+      .am {
+        top: -32px;
+      }
+      .pm {
+        top: -10px;
+      }
+    }
+    .suc-bd{
+      margin:20px auto 0;
+      border: 1PX solid #f7f7f7;
+      position: relative;
+      &.border-top {
+        margin: -30px auto 0;
+      }
+      &.border-bot {
+        margin: 10px auto 0;
+      }
+      .com-jt{
+        position: absolute;
+        height: 1PX;
+        width: 10px;
+        border: 1PX solid #f7f7f7;
+        display: inline-block;
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg); /* Safari 和 Chrome */
+      }
+      .right {
+        top: -5px;
+        right: -2px;
+      }
+      .left {
+        top: 3px;
+        left: -2px;
+      }
+    }
+  }
+  .ver-inp{
+    display: block;
+    position: absolute;
+    bottom:15px;
+    right:20px;
+    border:1PX solid @c-ff6600;
+    color: @c-ff6600;
+    text-align: center;
+    padding:0;
+  }
+  .clocker-box {
+    width: 100%;
+    float: left;
+    margin-top: 24px;
+    p {
+      font-size: 26px;
+      color: @c-4c4c4c;
+      text-align: center;
+      span{
+        color: @c-ff6600;
+      }
+    }
+    .counter-time {
+      margin: 26px auto 0;
+      text-align:center;
+      .day{
+        display:inline-block;
+        width:50px;
+        height:50px;
+        line-height:50px;
+        background-color:#28292e;
+        border-radius:5PX;
+        color: @c-fff;
+        font-size:28px;
+        text-align:center;
+      }
+      .split-tag{
+        display:inline-block;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+        color:#28292e;
+        font-size:36px;
+      }
+    }
+  }
+  .sus-container {
+    padding:20px;
+    .con-icon {
+      width: 100%;
+      float: left;
+      margin-top: 220px;
+      &.fail-mg{
+        .sus-right{
+          background: url("../assets/no.png") no-repeat center;
+          background-size:197px 197px;
+        }
+      }
+      .sus-right {
+        position: relative;
+        width: 255px;
+        height: 255px;
+        margin: 0 auto;
+        background: url("../assets/gou_bg.png") no-repeat center;
+        background-size: 100%;
+        img {
+          width: 118px;
+          height: 97px;
+          position: absolute;
+          top: 70px;
+          left: 80px;
+        }
+      }
+    }
+    .fail-mg{
+      margin-top:130px;
+    }
+    .con-info {
+      width: 100%;
+      float: left;
+      margin-top: 45px;
+      p {
+        height: 30px;
+        line-height: 30px;
+        color: @c-ff6600;
+        font-size: 26px;
+        text-align: center;
+        &.fail-p{
+          color:#ccc;
+        }
+      }
+    }
+  }
+}
+
+
+.no-market {
+  width: 100%;
+
+  .market-icon {
+    width: 100%;
+    height: 234px;
+    
+    background: url("../assets/no-market.png") no-repeat center center;
+    background-size: 201px 234px;
+
+    margin: 60px 0 40px;
+  }
+  .market-text {
+    padding: 0 20px;
+    font-size: 32px;
+    color: #4c4c4c;
+    text-align: center;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no,email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <link href="https://obfiwfjx9.qnssl.com/mobi.css" rel="stylesheet">
+    <script>
+      (function (doc, win) {
+        var docEl = doc.documentElement,
+          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            var ua = navigator.userAgent
+            if (!/(iPhone|iPad|iPod|iOS)/i.test(ua) && !/(Android)/i.test(ua) ) {
+              docEl.style.fontSize = 15 + 'px';
+            } else {
+              docEl.style.fontSize = 20 * (clientWidth / 750) + 'px';
+            }
+          };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+      })(document, window)
+    </script>
+    <title></title>
+</head>
+<body>
+<div id="app"></div>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://map.qq.com/api/js?v=2.exp&key=G6OBZ-E563U-U7NVN-2HM5J-UYSNZ-CIFL4&libraries=convertor"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.0&key=c37cdb5d35801aa682fe237825a121b7&plugin=AMap.Transfer"></script>
+<!--<script src="static/remogeo.js"></script>-->
+<script src="https://api.map.baidu.com/api?v=2.0&ak=BriDmV4VWIBGg9CEDeDlwG0GUIzhmK1N"></script>
+<script src="https://obfiwfjx9.qnssl.com/mobi.min.js"></script>
+<script src="static/zepto.js"></script>
+<script src="static/timePicker/gmu.js"></script>
+<script src="static/timePicker/timepicker.js"></script>
+
+<!--<script src="//cdn.bootcss.com/eruda/1.2.6/eruda.min.js"></script>-->
+<!--<script>eruda.init();</script>-->
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+  "city": ["cityHistorySearch"],
+  "building": ["carpool_starts", "carpool_ends"]
+}

@@ -1,0 +1,49 @@
+@import "./theme";
+
+.app-page{
+  position: relative;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  height:100%;
+  max-width:560PX;
+  margin:0 auto;
+}
+
+.app-layout{
+  position: relative;
+  flex:1;
+}
+
+.app-container {
+  position:absolute;
+  top:86px;
+  bottom:0;
+  width:100%;
+  background: #f2f2f2;
+}
+
+.app-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  //-webkit-overflow-scrolling: touch; //会导致日期选择控件被mask遮住
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    &:vertical {
+      display: none;
+    }
+  }
+  &.flex-box{
+    display: flex;
+    flex-direction: column;
+  }
+  &.bg-f8f8f8{
+    background-color: #f8f8f8;
+  }
+  &.bg-ffffff{
+    background-color: #fff;
+  }
+}

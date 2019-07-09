@@ -1,0 +1,117 @@
+@import "theme";
+
+.container-map{
+  display:flex;
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  height:100%;
+  background-color: @c-fff;
+  &.bg-gray{
+    background-color:#f8f8f8;
+  }
+  .box-map{
+    height:454px;
+    .allMap{
+      width:100%;
+      height:100%;
+    }
+  }
+  .box-station{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+      &:vertical {
+        display: none;
+      }
+    }
+    .station-list{
+      background-color: @c-fff;
+    }
+    .station-list li{
+      position:relative;
+      height:130px;
+      line-height:130px;
+      padding-left:100px;
+      font-size:28px;
+      color:#38343e;
+      &.local-address{
+        margin-top:20px;
+        height:86px;
+        line-height:86px;
+        padding-left:20px;
+        background-color:#e6e6e6;
+      }
+      span{
+        display:block;
+        width: 100%;
+        height:130px;
+        line-height:130px;
+        padding-right:20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow:hidden;
+      }
+      &:active{
+        background-color:#f2f2f2;
+      }
+      .station-num{
+        position:absolute;
+        left:24px;
+        top:0;
+        width:40px;
+        height:130px;
+        background:url("../assets/dianwei.png") no-repeat center center;
+        background-size:40px 40px;
+        text-align:center;
+        font-size:20px;
+        color: @c-fff;
+      }
+      .station-add {
+        position: absolute;
+        left: 24px;
+        top: 0;
+        width: 40px;
+        height: 130px;
+        background: url("../assets/charter/add_station.png") no-repeat center center;
+        background-size: 28px 28px;
+      }
+      .icon-station-local{
+        position:absolute;
+        left:24px;
+        top:0;
+        width:40px;
+        height:130px;
+        background:url("../assets/map_no.png") no-repeat center center;
+        background-size:22px 28px;
+        text-align:center;
+        font-size:24px;
+        color: @c-fff;
+      }
+    }
+    .empty{
+      padding-top:100px;
+      text-align:center;
+      font-size:28px;
+      color:#a8a8a9;
+    }
+  }
+  .anchorBL{
+    img{
+      display:none;
+    }
+  }
+}

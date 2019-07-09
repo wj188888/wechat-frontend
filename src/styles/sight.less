@@ -1,0 +1,1093 @@
+@import "./theme";
+
+//景点首页
+.sight-nav{
+	position:absolute;
+	top:0;
+	left:90px;
+	right:90px;
+	height:85px;
+	padding:10px 0;
+	overflow: hidden;
+	z-index:200;
+	background-color: @c-fff;
+	.nav-input{
+		display:flex;
+		width:100%;
+		height:100%;
+		border:1PX solid @bc-e5e5e5;
+		border-radius:5px;
+		padding:10px 0;
+		.location{
+			height:46px;
+			line-height:46px;
+			padding-left:50px;
+			padding-right:20px;
+			font-size: 28px;
+			color: #323232;
+			background:url("../assets/sight/adss.png") no-repeat 20px center;
+			background-size: 19px 23px;
+			border-right:1PX solid @bc-e5e5e5;
+		}
+		.source-search{
+			flex:1;
+			padding-left:20px;
+			line-height:46px;
+			font-size:28px;
+			color:#929292;
+		}
+	}
+}
+.s-slide-box{
+	width: 100%;
+	margin-bottom:25px;
+	.slide-ul{
+		width:100%;
+		.vux-slider > .vux-indicator{
+			bottom:10px;
+		}
+		.slide-item{
+			display:block;
+			width:100%;
+			height:100%;
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:cover;
+		}
+	}
+}
+.white-back{
+	background-color: @c-fff;
+	padding-bottom:30px;
+}
+.box-mg{
+	margin-top:25px;
+}
+.ui-sight-title{
+	width:100%;
+	height:60px;
+	position:relative;
+	padding-top:10px;
+	.title{
+		position:absolute;
+		left:50%;
+		top:10px;
+		margin-left:-60px;
+		font-size:28px;
+	}
+	span{
+		display:block;
+		float:left;
+	}
+	.circle{
+		width:10px;
+		height:10px;
+		border-radius:5px;
+		background-color:#A4A4A4;
+		margin-top:25px;
+	}
+	.center{
+		height:60px;
+		line-height:60px;
+		font-size:28px;
+		color:#a5a5a5;
+		margin-left:15px;
+		margin-right:15px;
+	}
+	.more{
+		position:absolute;
+		right:30px;
+		top:10px;
+		height:60px;
+		span{
+			margin-right:20px;
+			height:60px;
+			line-height:60px;
+			font-size:24px;
+			color:#a5a5a5;
+		}
+		.icon-r-jt:after{
+			margin-top:-8px;
+      right:0;
+		}
+	}
+}
+.rest-com{
+	width:100%;
+	margin-bottom:20px;
+	p{
+		width:92%;
+		margin:0 auto;
+		height:40px;
+		display:flex;
+		span{
+			display: block;
+			float:left;
+		}
+		.line{
+			height:1PX;
+			border:1PX solid #e5e5e5;
+			margin-top:14px;
+			flex:1;
+		}
+		.theme-title{
+			height:30px;
+			line-height:30px;
+			font-size:16px;
+			color: #808080;
+			padding-left:40px;
+			padding-right:40px;
+		}
+	}
+}
+.box-com-ui{
+	margin-bottom:20px;
+	border-radius:10px;
+}
+.sight-ticket-box{
+	padding:30px 0 0;
+	background-color: @c-fff;
+	.tour-route{
+		width:100%;
+		height:190px;
+		display:flex;
+		position:relative;
+		.tic-line{
+			height:96%;
+			width:6px;
+			border-top-right-radius:3px;
+			border-bottom-right-radius:3px;
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		.orange-line{
+			background-color: @c-ff6600;
+		}
+		.red-line{
+			background-color:#FF3F65;
+		}
+	}
+	.left-box{
+		flex:5;
+	}
+	.right-box{
+		position:relative;
+		border-left:1PX dashed @bc-e5e5e5;
+		height:100%;
+		.route-type{
+			position:absolute;
+			bottom:10px;
+			left:50%;
+			margin-left:-40px;
+			span{
+				display:block;
+				float:left;
+				color:#a5a5a5;
+				font-size:26px;
+				margin-left:10px;
+			}
+			.icon-type{
+				display:block;
+				float:left;
+				width:25px;
+				height:25px;
+				background: url("../assets/sight/wangfan.png") no-repeat;
+				background-size:100%;
+			}
+			.icon-dc{
+				background-image: url("../assets/sight/dancheng.png");
+			}
+		}
+	}
+	.layer{
+		height: 45px;
+		span{
+			display:block;
+			float:left;
+			width:360px;
+			font-size:32px;
+			color:@c-121212;
+			height: 45px;
+			line-height: 45px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+		.icon{
+			display:block;
+			float:left;
+			width:11px;
+			height:12px;
+			background: url("../assets/sight/red.png") no-repeat;
+			background-size:100%;
+			margin:16px 15px 0 70px;
+		}
+		.green-icon{
+			background-image:url("../assets/sight/green.png");
+		}
+		.orange-icon{
+			background-image:url("../assets/sight/orange.png");
+		}
+	}
+	.short-line{
+		height:30px;
+		width:1PX;
+		border:	1PX dashed @bc-e5e5e5;
+		margin-left:74px;
+	}
+	.long-line{
+		height:100px;
+		width:1PX;
+		border:	1PX dashed @bc-e5e5e5;
+		margin-left:74px;
+	}
+	.tour-tags{
+		display:flex;
+		height:70px;
+		line-height:70px;
+		margin-top:30px;
+		font-size:28px;
+		color:#a5a5a5;
+		.tour-time{
+			flex:1;
+			padding-left:90px;
+			background:url("../assets/sight/time_small.png") no-repeat 60px center;
+			background-size:21px 24px;
+		}
+		.tour-tag{
+			height:70px;
+			text-align:right;
+			padding-right:40px;
+			width:360px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+	}
+}
+.tour-price{
+	width:200px;
+	margin-top:3px;
+	text-align:center;
+	span{
+		color: @c-ff6600;
+		font-size:40px;
+		&:first-child{
+			font-size:28px;
+		}
+	}
+}
+.sight-price{
+	width:300px;
+	position:absolute;
+	right:40px;
+	bottom:20px;
+	text-align:right;
+	i{
+		font-size:24px;
+		margin-left:10px;
+	}
+}
+.time-icon{
+	display:block;
+	float:left;
+	background-repeat:  no-repeat;
+	background-size:100%;
+	width:21px;
+	height:28px;
+	background-image:url("../assets/sight/time_small.png");
+}
+.bus-time{
+	margin:15px 15px 0 70px;
+}
+.prc-time{
+	margin-top:2px;
+}
+.search-list{
+	position:absolute;
+	top: 0;
+	bottom:100px;
+	width:100%;
+}
+.sight-box{
+	width:100%;
+	position:relative;
+	background-color: @c-fff;
+	img{
+		display:block;
+		width:100%;
+		height:310px;
+		border-top-left-radius:10px;
+		border-top-right-radius:10px;
+	}
+	.start-place{
+		height:50px;
+		line-height:50px;
+		position:absolute;
+		left:0;
+		top:0;
+		padding:0 20px;
+		border-top-left-radius:10px;
+		border-bottom-right-radius:10px;
+		font-size:26px;
+		color: @c-fff;
+		opacity:0.7;
+		background-color:#000;
+	}
+}
+.sight-desc{
+	padding:20px;
+	position:relative;
+	.theme{
+		width:100%;
+		height:69px;
+		line-height:35px;
+		font-size:32px;
+		color:@c-121212;
+		overflow: hidden;
+	}
+}
+.time-pany{
+	margin-top:20px;
+	i,span{
+		display:block;
+		float:left;
+		margin-right:10px;
+	}
+	.pany-icon{
+		width:23px;
+		height:22px;
+		margin-top:4px;
+		background: url("../assets/sight/business_small.png") no-repeat;
+		background-size:100%;
+	}
+	span{
+		font-size:24px;
+		color:#b2b2b2;
+		height:30px;
+		line-height:30px;
+	}
+	.week{
+		width:180px;
+		white-space:nowrap;
+		text-overflow: ellipsis;
+		overflow:hidden;
+	}
+}
+.sight-tags{
+	margin-top:15px;
+	.tag-item{
+		float:left;
+		margin-right:10px;
+		i{
+			display:block;
+			float:left;
+			width:21px;
+			height:21px;
+			background: url("../assets/sight/biaoqian_big.png") no-repeat;
+			background-size:100%;
+			margin-right:10px;
+		}
+		span{
+			display:block;
+			float:left;
+			font-size:24px;
+			color:#272a35;
+		}
+
+	}
+}
+//产品列表
+.sig-top-nav{
+	&.sig-absolute{
+		position:absolute;
+		top:0;
+	}
+	display:flex;
+	width:100%;
+	height:90px;
+	flex-direction:row;
+	background-color: @c-fff;
+	li{
+		flex:1;
+		height:90px;
+		line-height:90px;
+		text-align:center;
+		font-size:32px;
+	}
+	.nav-active{
+		color: @c-ff6600;
+		border-bottom:4px solid @c-ff6600;
+	}
+}
+//车票详情
+.sig-rote-line{
+	background-color: @c-fff;
+	.sig-line-top{
+		padding-top:30px;
+		i,span{
+			display:block;
+			float:left;
+		}
+		i{
+			width:27px;
+			height:37px;
+			background: url("../assets/sight/ticket_big.png") no-repeat;
+			background-size:100%;
+			margin-left:25px;
+		}
+		span{
+			font-size:36px;
+			margin-left:15px;
+			height:37px;
+			line-height:37px;
+		}
+	}
+}
+.sig-bot{
+	position:relative;
+	.sub-cls{
+		margin-top:40px;
+		padding:0 20px 15px;
+		border-bottom:1PX solid @bc-e5e5e5;
+		position:relative;
+	}
+	.sight-tags{
+		padding:30px 20px;
+		margin:0;
+		.tag-item{
+			margin-right:25px;
+		}
+	}
+	.sight-price{
+		top:-20px;
+	}
+}
+.fee-include{
+	background-color: @c-fff;
+	margin-top:20px;
+	padding:1PX 20px 1PX;
+	line-height:1.614;
+	h3{
+		height:30px;
+		line-height:30px;
+		font-size:26px;
+		margin-bottom:30px;
+		font-weight:normal;
+		margin-top:20px;
+	}
+	ul{
+		li{
+			height:25px;
+			margin-bottom:30px;
+			.sig-fee-icon{
+				display:block;
+				float:left;
+				width:25px;
+				height:25px;
+				background: url("../assets/sight/bus_1.png") no-repeat;
+				background-size:100%;
+			}
+			.sig-meal{
+				background-image: url("../assets/sight/food_1.png");
+			}
+			.sig-jd{
+				background-image: url("../assets/sight/jingdian_1.png");
+			}
+			.sig-ht{
+				background-image: url("../assets/sight/hotel_1.png");
+			}
+			span{
+				display:block;
+				float:left;
+				line-height:25px;
+				font-size:22px;
+				color:#6a6c72;
+				margin-left:30px;
+			}
+		}
+	}
+}
+.man-icon{
+	display:block;
+	width:60px;
+	height:60px;
+	border-radius:30px;
+	margin-top:20px;
+	margin-right:20px;
+}
+.man-list{
+	padding:0 20px 20px;
+	line-height:1.614;
+	font-size:28px;
+}
+//车票详情日期选择时显示的价钱
+.sig-date-price{
+	position:absolute;
+	display:block;
+	top:0;
+	right:40px;
+	height:100px;
+	line-height:100px;
+	text-align:right;
+	color: @c-ff6600;
+	font-size:30px;
+}
+//班车订单填写
+.order-write-box{
+	width:100%;
+	height:260px;
+	display:flex;
+	-webkit-border-radius:50px;
+	border-radius:50px;
+	position:relative;
+	.half-circle{
+		position:absolute;
+		background-color:#f8f8f8;
+		z-index:10;
+		&.hc-left{
+			width: 25px;
+			height: 50px;/*高度为宽度的2倍*/
+			border-radius:0 25px 25px 0;/*圆角半径为宽度的值*/
+			-webkit-border-radius:0 25px 25px 0;
+			-moz-border-radius:0 25px 25px 0;
+			left:0;
+			top:50%;
+			margin-top:-25px;
+
+		}
+		&.hc-top{
+			height: 10px;/*高度为宽度的2倍*/
+			width: 20px;
+			border-radius: 0 0 10px 10px;/*圆角半径为宽度的值*/
+			-webkit-border-radius: 0 0 10px 10px;
+			-moz-border-radius: 0 0 10px 10px;
+			left:100px;
+			top:0;
+			margin-left:-10px;
+		}
+		&.hc-bot{
+			height: 10px;/*高度为宽度的2倍*/
+			width: 20px;
+			border-radius:10px 10px 0 0;/*圆角半径为宽度的值*/
+			-webkit-border-radius:10px 10px 0 0;
+			-moz-border-radius:10px 10px 0 0;
+			left:100px;
+			bottom:0;
+			margin-left:-10px;
+		}
+	}
+}
+.write-left{
+	width:100px;
+	background-color:#ff6600;
+	position:relative;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+	border-right:1PX dashed #e8c6b8;
+	span{
+		display:block;
+		position:absolute;
+		left:0;
+		top:50%;
+		margin-top:-50px;
+		width:100px;
+		height:100px;
+		line-height:130px;
+		text-align:center;
+		-webkit-transform:rotate(-90deg);
+		transform:rotate(-90deg);
+		color:#fff;
+		font-size:36px;
+	}
+}
+.write-right{
+	flex:1;
+	background-color:#fcefe6;
+	padding-top:50px;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+	.right-top{
+		width:240px;
+		margin:0 auto;
+		i,span{
+			display:block;
+			float:left;
+			margin-right:20px;
+			font-size:26px;
+			color:#2a2a38;
+		}
+		i{
+			width:26px;
+			height:26px;
+			background: url("../assets/sight/time.png") no-repeat;
+			background-size:100%;
+		}
+		span{
+			height:26px;
+			line-height:26px;
+		}
+	}
+	.right-bot{
+		margin-top:50px;
+		ul{
+			display:flex;
+			li{
+				flex:3;
+				.city,.station{
+					text-align:center;
+					padding:0 5px;
+					height:40px;
+					line-height:40px;
+					color:#2a2a38;
+				}
+				.city{
+					font-size:36px;
+					margin-bottom:10px;
+				}
+				.station{
+					font-size:24px;
+					color:#7f7f7f;
+				}
+
+			}
+			.middle{
+				padding:0 30px;
+				flex:2;
+				.border{
+					display:block;
+					width:100%;
+					height:1PX;
+					border:1PX solid #2a2a38;
+					margin-top:19px;
+					position:relative;
+					i{
+						position:absolute;
+						top:-5px;
+						right:0;
+						height:1PX;
+						width:10px;
+						border:1PX solid #2a2a38;
+						display: inline-block;
+						transform:rotate(40deg);
+						-webkit-transform:rotate(40deg); /* Safari 和 Chrome */
+					}
+				}
+			}
+		}
+	}
+}
+//景点选择出发地、目的地样式
+.sig-pop-search{
+	display:block;
+	width:87%;
+	height:80px;
+	line-height:80px;
+	padding:10px;
+	margin:20px auto;
+	border:none;
+	font-size:30px;
+}
+.sig-pop-tit{
+	height:45px;
+	line-height:45px;
+	background-color:#F2F2F2;
+	color:#929292;
+	text-align:center;
+	margin:20px 0;
+	font-weight:normal;
+}
+.sight-search{
+	width:100%;
+	height:96px;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background-color: @bg-121426;
+  opacity:0.9;
+  z-index:100;
+	ul{
+		display:flex;
+		li{
+			position:relative;
+			flex:1;
+			&.has-dot:after{
+				content: '';
+				position:absolute;
+				top:20px;
+		    left:50%;
+        margin-left:40px;
+				width: 10px;
+				height:10px;
+				border-radius:50%;
+				background-color: @c-ff6600;
+			}
+			p{
+				width:100%;
+				height:36px;
+				line-height:36px;
+				color: @fc-fff;
+				font-size:24px;
+				text-align:center;
+				margin-bottom:7px;
+				&.icon-s{
+					height:50px;
+					background:no-repeat center bottom;
+					background-size: 37px 37px;
+				}
+				&.icon-s-sum{
+					background-image: url("../assets/sight/sai_1.png");
+				}
+				&.icon-s-day{
+					background-image: url("../assets/sight/time_1.png");
+				}
+				&.icon-s-city{
+					background-image: url("../assets/sight/city_1.png");
+				}
+				&.icon-s-price{
+					background-image: url("../assets/sight/pai_1.png");
+				}
+			}
+			&.active p {
+				color: @c-ff6600;
+			}
+			&.active .icon-s-sum {
+				background-image: url("../assets/sight/sai_2.png");
+			}
+			&.active .icon-s-day {
+				background-image: url("../assets/sight/time_2.png");
+			}
+			&.active .icon-s-city {
+				background-image: url("../assets/sight/city_2.png");
+			}
+			&.active .icon-s-price {
+				background-image: url("../assets/sight/pai_2.png");
+			}
+		}
+	}
+}
+//综合筛选弹框样式
+.sum-content{
+	position:relative;
+	bottom:0;
+	height:480px;
+	background-color: @c-fff;
+}
+.sum-operation{
+	height:80px;
+	background-color: @bg-ff9900;
+	padding:0 25px;
+	position:relative;
+	a{
+		display:block;
+		height:80px;
+		line-height:80px;
+		font-size:28px;
+		color:@c-fff;
+	}
+	.mid-but{
+		width:130px;
+		height:46px;
+		line-height:46px;
+		background-color:#D8D8D8;
+		color: @c-fff;
+		text-align:center;
+		border-radius:10px;
+		position:absolute;
+		left:50%;
+		top:17px;
+		margin-left:-65px;
+	}
+}
+.sum-condition{
+	display:flex;
+	.sum-con-left{
+		width:230px;
+		height:400px;
+		background-color:#E5E5E5;
+		ul{
+			li{
+				position:relative;
+				height:88px;
+				line-height:88px;
+				text-align:center;
+				font-size:28px;
+				&.has-dot:after{
+					content: '';
+					position:absolute;
+					top:20px;
+					left:40px;
+					width: 10px;
+					height:10px;
+					border-radius:50%;
+					background-color: @c-ff6600;
+				}
+			}
+			.active{
+				background-color: @c-fff;
+				color: @c-ff6600;
+			}
+		}
+	}
+}
+.sum-con-right{
+	flex:1;
+	height:400px;
+	background-color: @c-fff;
+	padding:0 0 0 20px;
+	overflow-x:hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	&::-webkit-scrollbar {
+		-webkit-appearance: none;
+		&:vertical {
+			display: none;
+		}
+	}
+	.li-item{
+		height:88px;
+		line-height:88px;
+		border-bottom:1PX solid @bc-e5e5e5;
+		position:relative;
+		font-size:28px;
+		label {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		.choose-type{
+			display:block;
+			width:35px;
+			height:35px;
+			background:url("../assets/sight/choise_1.png") no-repeat;
+			background-size: 100%;
+			position:absolute;
+			top:26px;
+			right:20px;
+		}
+		input[type="checkbox"]:checked + .choose-type{
+			background-image: url("../assets/sight/choise_2.png");
+		}
+		input[type="radio"]:checked + .choose-type{
+			background-image: url("../assets/sight/choise_2.png");
+		}
+	}
+}
+.price-inp-box{
+	height:400px;
+	padding-bottom:130px;
+	li{
+		margin-top:30px;
+		.error-tips{
+			color:#ff0000;
+		}
+	}
+	label, span{
+		font-size:28px;
+	}
+	label,span,input{
+		display:block;
+		float:left;
+		height:40px;
+		line-height:40px;
+	}
+	input{
+		width:100px;
+		border:1PX solid @bc-e5e5e5;
+		border-radius:3px;
+		padding:5px;
+		font-size:28px;
+	}
+}
+.day-condition{
+	display:flex;
+	.sum-con-right{
+		padding:0 20px;
+	}
+}
+//景点列表
+.com-list-box{
+	width:100%;
+	padding:20px 0 20px 20px;
+	display:flex;
+	height:260px;
+	background-color: @c-fff;
+	margin-bottom:20px;
+}
+.com-list-left{
+	width:170px;
+	height:216px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.com-list-right{
+	flex:1;
+
+}
+.list-tags{
+	margin-top:10px;
+	span{
+		display:block;
+		float:left;
+		border-radius:5px;
+		color: @c-ff6600;
+		border:1PX solid @c-ff6600;
+		padding:5px;
+		margin-right:10px;
+	}
+}
+.sig-price-score{
+	margin-top:30px;
+}
+.sig-price-box{
+	float:left;
+	span{
+		font-size:40px;
+	}
+	em{
+		font-size:24px;
+	}
+	.og-word{
+		color: @c-ff6600;
+	}
+
+}
+.people-box,.score-box{
+	font-size:24px;
+	color:#b2b2b2;
+	float:right;
+	line-height:40px;
+	margin-right:10px;
+}
+.com-day-nav{
+	position:relative;
+	width:100%;
+	padding:0 20px 25px 155px;
+	.day{
+		position: absolute;
+		left:0;
+		top:0;
+		display:block;
+		width:130px;
+		height:48px;
+		line-height:48px;
+		text-align: center;
+		color: @c-fff;
+		font-size: 30px;
+		background-color: @c-ff6600;
+		margin-left:-9px;
+		padding-left:10px;
+	}
+	.trangle-down{
+		content: '';
+		width: 0;
+		height: 0;
+		border-top: 20px solid #C44F00;
+		border-left: 10px solid transparent;
+		position: absolute;
+		top:46px;
+		left:0;
+	}
+	.title{
+		height:48px;
+		line-height:48px;
+		font-size:32px;
+		color:#272a35;
+	}
+}
+
+.route-detail{
+	background-color: @c-fff;
+	font-size:28px;
+	h2{
+		font-size:28px;
+		font-weight:normal;
+	}
+	h3{
+		height:30px;
+		line-height:30px;
+		text-align:center;
+		font-size:30px;
+		margin-bottom:10px;
+	}
+}
+.day-tour{
+	padding-left:20px;
+	p{
+		line-height:30px;
+	}
+	.time{
+		height:38px;
+		i,span{
+			display:block;
+			float:left;
+		}
+		i{
+			width:38px;
+			height:38px;
+			background:no-repeat;
+			background-size: 100%;
+		}
+		span{
+			height:38px;
+			line-height:38px;
+			margin-left:20px;
+			font-size:30px;
+			color:#272a35;
+		}
+		.bus{
+			background-image:url("../assets/sight/bus.png");
+		}
+		.food{
+			background-image:url("../assets/sight/food.png");
+		}
+		.jingdian{
+			background-image:url("../assets/sight/jingdian.png");
+		}
+		.hotel{
+			background-image:url("../assets/sight/hotel.png");
+		}
+		.jihe{
+			background-image:url("../assets/sight/jihe.png");
+		}
+	}
+	.cont-pd{
+		padding:15px 0;
+		.content{
+			min-height:50px;
+			border-left:1PX solid #FFC9A6;
+			margin-left:17px;
+			padding-left:43px;
+			padding-right:60px;
+			p{
+				line-height:1.614;
+			}
+		}
+	}
+
+}
+.fee-clu-box{
+	width: 100%;
+	padding:30px 20px 40px;
+	line-height: 1.7;
+	font-size: 26px;
+	color: @c-4c4c4c;
+	word-break: break-all;
+	overflow: hidden;
+	h3{
+		text-align:left;
+		font-size:28px;
+		color:@c-4c4c4c;
+		margin-bottom:30px;
+		font-weight:bold;
+	}
+	img{
+		max-width: 100%;
+	}
+}
+.man-about{
+	font-size:26px;
+}

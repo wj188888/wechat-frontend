@@ -1,0 +1,436 @@
+@import "./theme";
+
+.form-box {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  background-color: @c-fff;
+  &.pad-r-110 {
+    padding-right: 110px;
+  }
+  &.mar-40 {
+    margin-bottom: 40px;
+  }
+  &.pad-l-20 {
+    padding: 0 0 0 20px;
+  }
+  .change {
+    position: absolute;
+    width: 40px;
+    height: 42px;
+    right: 31px;
+    top: 50%;
+    margin-top: -21px;
+    background: url('../assets/change.png') no-repeat 0 0;
+    background-size: 100%;
+  }
+  &.pad-0{
+    padding:0;
+    .input-inline,
+    .date-time,
+    .check-box,
+    .input-date{
+      margin:0 20px;
+    }
+  }
+  &.pad-0-inner-20{
+    padding:0;
+    .input-inline,
+    .check-box,
+    .input-x,
+    .input-date{
+      padding:0 20px;
+    }
+    .icon-check,
+    .icon-r-jt:after,
+    .icon-b-jt:after{
+      right:20px;
+    }
+  }
+}
+
+.base-info {
+  height: 75px;
+  line-height: 75px;
+  font-size: 28px;
+  color: #9b9d9f;
+  position: relative;
+  padding-left: 16px;
+  i {
+    display: block;
+    position: absolute;
+    height: 30px;
+    border-right: 5px solid #ff6600;
+    top: 23px;
+    left: 1PX;
+  }
+}
+
+.input-x {
+  position: relative;
+  padding-bottom: 8px;
+  font-size: 24px;
+  overflow: hidden;
+  label {
+    display: block;
+    width: 100%;
+    padding: 28px 0 8px;
+    font-size: 24px;
+    color: @c-999;
+  }
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 32px;
+    color: @c-121212;
+    border: 0;
+    background-color: @c-fff;
+  }
+  p {
+    height: 130px;
+    line-height: 130px;
+    color: @c-999;
+  }
+  .check-box{
+    position:relative;
+  }
+  .value-x{
+    padding: 10px 0;
+    font-size: 32px;
+    color: @c-121212;
+    &.pad-big{
+      padding: 20px 0;
+      width:100%;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      overflow:hidden;
+    }
+  }
+}
+
+.input-inline {
+  display: flex;
+  background-color: @c-fff;
+  overflow: hidden;
+  position: relative;
+  label,
+  .p-price{
+    display:block;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 28px;
+    color: @c-121212;
+  }
+  .p-price{
+    width:100%;
+    text-align:center;
+    span{
+      font-size:28px;
+      color: @c-ff6600;
+    }
+  }
+  .line-manager{
+    width: 400px;
+  }
+  input {
+    flex: 1;
+    display: block;
+    height:40px;
+    margin:30px 0;
+    background-color: @c-fff;
+    border: 0;
+    font-size: 28px;
+    color: @c-121212;
+    &.has-clear-value{
+      padding-right:50px;
+    }
+  }
+  .clear-value{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100px;
+    height:100px;
+    background:url('../assets/cha.png') no-repeat 54px center;
+    background-size:26px 26px;
+  }
+  select {
+    flex: 1;
+    display: block;
+    background-color: @c-fff;
+    border: 0;
+    font-size: 32px;
+  }
+  .inp-text {
+    display: block;
+    flex: 1;
+    padding-right:20px;
+    line-height: 100px;
+    font-size: 28px;
+    color: @c-121212;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.inline-box{
+  position: relative;
+  display: flex;
+  padding:0 20px;
+  background-color: @c-fff;
+  overflow: hidden;
+  &.pad-lr-50{
+    padding:0 50px;
+  }
+  span,
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"]{
+    flex:1;
+    padding-right:20px;
+  }
+  label,
+  span,
+  input[type="text"],
+  input[type="number"],
+  input[type="tel"]{
+    display:block;
+    line-height:40px;
+    padding:30px 0;
+    overflow: hidden;
+    font-size: 28px;
+    color: #121212;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  label{
+    width:140px;
+  }
+  .width-100{
+    width: 100px;
+  }
+  .coupon-tag{
+    margin-left:20px;
+    padding: 5px;
+    font-size: 20px;
+    color: @fc-ff6600;
+    border:1PX solid @bc-ff6600;
+    border-radius:4px;
+  }
+  .label-insure i,
+  .label-activity i,
+  .label-coupon i{
+    display: inline-block;
+    margin-right:10px;
+    width:26px;
+    height:26px;
+    line-height:26px;
+    text-align:center;
+    color: @fc-fff;
+    font-size:20px;
+    border-radius:4px;
+    vertical-align: text-bottom;
+  }
+  .label-insure i{
+    background-color: @bg-2290f9;
+  }
+  .label-activity i{
+    background-color: @bg-56ab71;
+  }
+  .label-coupon i{
+    background-color: @bg-ff9900;
+  }
+
+
+}
+
+.input-verify {
+  padding-right: 20px;
+  display: flex;
+  overflow: hidden;
+  .input-code {
+    flex: 1;
+  }
+  .button-box {
+    overflow: hidden;
+  }
+  .button {
+    padding: 0;
+  }
+}
+
+//向下展开详情
+.form-detail{
+  padding:0;
+  .input-inline{
+    padding:0 20px;
+  }
+  .icon-r-jt:after{
+    margin-top:-6px;
+    right:20px;
+  }
+}
+
+.show-detail{
+  position:absolute;
+  right:40px;
+  top:40px;
+  font-size:28px;
+  color: @c-999;
+}
+
+.textarea-x {
+  .textarea {
+    width: 100%;
+    height: 220px;
+    padding: 16px 20px;
+    border: 0;
+    background-color: @c-fff;
+    font-size: 28px;
+  }
+}
+
+.search-box {
+  padding-left: 20px;
+  height: 80px;
+  background-color: @c-fff;
+  input {
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding:10px 20px 10px 0;
+    font-size: 28px;
+    border: 0;
+    background: none;
+  }
+}
+
+.check-box {
+  position:relative;
+  height: 100px;
+  line-height: 100px;
+  background-color: @c-fff;
+  font-size: 28px;
+  color: @c-121212;
+  label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .icon-check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    background: url('../assets/xuanzhong_no.png') no-repeat right center;
+    background-size: 32px 32px;
+  }
+  input[type="checkbox"]:checked + .icon-check,
+  input[type="radio"]:checked + .icon-check{
+    background-image: url("../assets/xuanzhong.png");
+  }
+}
+
+.check-box-two {
+  position: absolute;
+  left: 20px;
+  top: 0;
+
+  width: 70%;
+  height: 100px;
+  line-height: normal;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .check-box-up {
+    display: inline-block;
+    width: 100%;
+    padding: 18px 0 3px 0;
+    //padding: 30px 0 20px 0;
+  }
+  .check-box-down {
+    display: inline-block;
+
+    width: 100%;
+    font-size: 24px;
+    color: #888;
+  }
+}
+
+/**周期选择**/
+.operate-time{
+  .check-box{
+    padding:0 1rem;
+    font-size:28px;
+    .icon-check{
+      right:1rem;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+input[type="number"]{-moz-appearance:textfield;}
+
+/**个人信息修改性别**/
+.input-sex input{
+  text-align:right;
+  padding-right:30px;
+}
+
+@form-div-height: 100px;
+.form-div {
+  display: flex;
+
+  width: 100%;
+  height: @form-div-height;
+  padding: 0 20px;
+
+  color: #4c4c4c;
+  background: #fff;
+}
+.form-div__icon-r {
+  width: 10px;
+  height: 100%;
+
+  background: url("../assets/jt_right.png") no-repeat center center;
+  background-size: 10px 16px;
+}
+.form-div__title {
+  width: 0;
+  flex: 1;
+  height: @form-div-height;
+  line-height: @form-div-height;
+
+  font-size: 28px;
+  color: #4c4c4c;
+}
+.form-div__input {
+  width: 0;
+  flex: 1;
+  height: @form-div-height;
+  line-height: @form-div-height;
+
+  font-size: 28px;
+  color: #121212;
+}
+.form-div__auto {
+  height: @form-div-height;
+  line-height: @form-div-height;
+
+  font-size: 28px;
+  color: #121212;
+}
+
+.form-div__auto-full {
+  font-size: 28px;
+  color: #121212;
+}

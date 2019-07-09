@@ -1,0 +1,86 @@
+@import "./theme";
+
+.button {
+  display: block;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 32px;
+  color: @fc-fff;
+  border: 1PX solid transparent;
+  border-radius: 4PX;
+  &:active{
+    -moz-opacity:0.8;
+    opacity:0.8;
+  }
+  &[disabled]{
+    background: @bg-ccc!important;
+    border: 1PX solid @bc-ccc!important;
+  }
+  &.disabled{
+    background: @bg-ccc!important;
+    border: 1PX solid @bc-ccc!important;
+  }
+  &.button-small {
+    width: 180px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 24px;
+  }
+  &.button-primary {
+    background-color: @bg-ff6600;
+    border: 1PX solid @bc-ff6600;
+  }
+  &.button-yellow {
+    background-color: @bg-ff9900;
+    border: 1PX solid @bc-ff9900;
+  }
+  &.button-yellow-lighter {
+    background-color: @bg-fedd52;
+    border: 1PX solid @bc-fedd52;
+    color: @fc-af5733;
+  }
+  &.button-empty-primary {
+    background-color: @bg-fff;
+    color: @fc-ff6600;
+    border: 1PX solid @bc-ff6600;
+  }
+  &.button-empty-white {
+    background-color: @bg-fff;
+    color: @fc-4c4c4c;
+    border-color:@bc-fff;
+  }
+  &.button-empty {
+    background-color: transparent;
+    color: @fc-808080;
+    border-color: @bc-808080;
+    font-size:30px;
+  }
+  &.button-green {
+    background-color: @bg-56ab71;
+  }
+  &.button-gray {
+    background-color: @bg-666564;
+  }
+  &.button-empty-gray {
+    background-color: @bg-fff;
+    color: @fc-808080;
+    border-color:@bc-888;
+  }
+  &.button-gray-lighter {
+    background-color: @bg-8e8e8e;
+  }
+  &.button-no-radius {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+  &.button-verify {
+    width: 180px;
+    height: 66px;
+    line-height: 64px;
+    font-size: 24px;
+    color: @fc-ff6600;
+  }
+}
